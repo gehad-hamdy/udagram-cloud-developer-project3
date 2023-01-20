@@ -17,7 +17,9 @@ services:
       POSTGRES_HOST: udagram.czdw0fvhi9rw.us-east-1.rds.amazonaws.com 
       AWS_REGION: us-east-1 
       AWS_PROFILE: default 
-      AWS_BUCKET: monolith-to-microservices-project
+      AWS_ACESS_KEY: AKIATHNE4YF3ISVA6GH6
+      SWCRET_ACCESS_KEY: RN8+6JvSzoFSttlFYQYBFExB3ccXNQgsUStBmPN4
+      AWS_BUCKET: udagram-222073504118
       JWT_SECRET: testing
       URL: "http://localhost:8100"
   backend-feed:
@@ -29,12 +31,14 @@ services:
       POSTGRES_PASSWORD: 123456789 
       POSTGRES_DB: postgres 
       POSTGRES_HOST: udagram.czdw0fvhi9rw.us-east-1.rds.amazonaws.com 
-      AWS_REGION: us-east-1 
+      AWS_REGION: us-east-1
       AWS_PROFILE: default 
-      AWS_BUCKET: monolith-to-microservices-project
+      AWS_ACESS_KEY: AKIATHNE4YF3ISVA6GH6
+      SWCRET_ACCESS_KEY: RN8+6JvSzoFSttlFYQYBFExB3ccXNQgsUStBmPN4
+      AWS_BUCKET: udagram-222073504118
       JWT_SECRET: testing
       URL: "http://localhost:8100"
   frontend:
-    image: udagram-frontend
+    image: udagram-frontend:local
     ports:
       - "8100:80"

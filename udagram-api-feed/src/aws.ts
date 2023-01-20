@@ -9,6 +9,8 @@ AWS.config.credentials = credentials;
 export const s3 = new AWS.S3({
   signatureVersion: 'v4',
   region: config.aws_region,
+  accessKeyId: config.aws_access_key,
+  secretAccessKey: config.secret_access_key,
   params: {Bucket: config.aws_media_bucket},
 });
 
@@ -26,10 +28,11 @@ export function getGetSignedUrl( key: string ): string {
 // Generates an AWS signed URL for uploading objects
 export function getPutSignedUrl( key: string ): string {
   const signedUrlExpireSeconds = 60 * 5;
-
-  return s3.getSignedUrl('putObject', {
+  const val =  s3.getSignedUrl('putObject', {
     Bucket: config.aws_media_bucket,
     Key: key,
     Expires: signedUrlExpireSeconds,
   });
+
+  return val;
 }
