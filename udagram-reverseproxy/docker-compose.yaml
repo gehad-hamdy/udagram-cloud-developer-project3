@@ -21,7 +21,7 @@ services:
       SWCRET_ACCESS_KEY: RN8+6JvSzoFSttlFYQYBFExB3ccXNQgsUStBmPN4
       AWS_BUCKET: udagram-222073504118
       JWT_SECRET: testing
-      URL: "http://localhost:8100"
+      URL: "http://a8ef659ec34e749a1a012cd1dc7bfd4a-1904095924.us-east-1.elb.amazonaws.com:8100"
   backend-feed:
     image: gehadhamdy/udagram-api-feed
     volumes:
@@ -37,7 +37,7 @@ services:
       SWCRET_ACCESS_KEY: RN8+6JvSzoFSttlFYQYBFExB3ccXNQgsUStBmPN4
       AWS_BUCKET: udagram-222073504118
       JWT_SECRET: testing
-      URL: "http://localhost:8100"
+      URL: "http://a8ef659ec34e749a1a012cd1dc7bfd4a-1904095924.us-east-1.elb.amazonaws.com:8100"
   frontend:
     image: gehadhamdy/udagram-frontend:local
     ports:
