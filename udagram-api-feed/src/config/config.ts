@@ -7,10 +7,16 @@ export const config = {
   'aws_region': process.env.AWS_REGION,
   'aws_profile': process.env.AWS_PROFILE,
   'aws_access_key' : process.env.AWS_ACESS_KEY,
-  'secret_access_key' : process.env.SWCRET_ACCESS_KEY,
+  'secret_access_key' : process.env.SECRET_ACCESS_KEY,
   'aws_media_bucket': process.env.AWS_BUCKET,
   'url': process.env.URL,
   'jwt': {
     'secret': process.env.JWT_SECRET,
   },
 };
+
+console.log("_________________database connection________________________")
+console.log(process.env.POSTGRES_HOST.trim)
+console.log(process.env.POSTGRES_USERNAME.trim)
+console.log(process.env.POSTGRES_PASSWORD.trim)
+console.log("_________________________________________________")
