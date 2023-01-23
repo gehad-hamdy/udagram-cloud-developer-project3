@@ -5,7 +5,7 @@ metadata:
     service: reverseproxy
   name: reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: reverseproxy
@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: Always          
         resources:
           requests:
-            memory: "64Mi"
+            memory: "200Mi"
             cpu: "250m"
           limits:
             memory: "1024Mi"
