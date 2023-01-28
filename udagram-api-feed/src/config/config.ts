@@ -16,7 +16,7 @@ export const config = {
 };
 
 console.log("_________________database connection________________________")
-console.log(process.env.POSTGRES_HOST.trim)
-console.log(process.env.POSTGRES_USERNAME.trim)
-console.log(process.env.POSTGRES_PASSWORD.trim)
+console.log(process.env.POSTGRES_HOST)
+console.log(process.env.POSTGRES_USERNAME)
+console.log(process.env.POSTGRES_PASSWORD)
 console.log("_________________________________________________")
