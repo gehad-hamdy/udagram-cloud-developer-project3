@@ -17,6 +17,10 @@ export const config = {
 
 console.log("_________________database connection________________________")
 console.log(process.env.POSTGRES_HOST)
-console.log(process.env.POSTGRES_USERNAME)
 console.log(process.env.POSTGRES_PASSWORD)
+console.log(process.env.POSTGRES_USERNAME)
+console.log("___________________aws creditional______________________________")
+console.log(process.env.AWS_PROFILE)
+console.log(process.env.AWS_ACESS_KEY)
+console.log(process.env.SECRET_ACCESS_KEY)
 console.log("_________________________________________________")

@@ -7,7 +7,10 @@ services:
       restart: always
       depends_on:
         - backend-user
-        - backend-feed     
+        - backend-feed    
+      environment:
+        API_HOST: api
+        NODE_ENV: development   
   backend-user:
     image: gehadhamdy/udagram-api-user
     environment:
